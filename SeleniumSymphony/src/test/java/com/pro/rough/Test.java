@@ -16,7 +16,7 @@ public class Test {
 	public static void main(String[] args) {
 
 		ConfigDataProvider config = new ConfigDataProvider();
-		
+		System.out.println(config.getDataFromConfig("Student1"));
 		System.out.println(config.getBrowser());		
 		System.out.println(config.getDataFromConfig("Name"));		
 		System.out.println(config.getUrl());
