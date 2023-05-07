@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bank Test Suite">
+ 
+  <test name="Adding customer">
+	  <parameter name="browserName" value="Chrome"/>
+	  <parameter name="author" value="Ruben"/>
+    <classes>
+		<class name="com.pro.testcases.HomePageTest">
+			<methods>
+				<include name="testBankManagerLogin"/>
+			</methods>			
+		</class>
+    </classes>
+  </test> 
+   
+</suite>  

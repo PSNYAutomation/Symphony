@@ -12,7 +12,7 @@ import com.google.common.io.Files;
 
 public class Util {
 	
-	public static void captureScreenshot(WebDriver driver, String name) {
+	public static String captureScreenshot(WebDriver driver, String name) {
 		
 		LocalDateTime currentTime = LocalDateTime.now();
 		DateTimeFormatter formatTime = DateTimeFormatter.ofPattern("dd-MM-yyyy_hh_mm_ss");
@@ -27,7 +27,7 @@ public class Util {
 		} catch (Exception e) {			
 			System.out.println("Unable to capture screenshot >> "+ e.getMessage());
 		}
-		
+		return dstn.getAbsolutePath();
 	}
 
 }

@@ -39,6 +39,7 @@ public class TwoTestBase {
 	public void setupSuite() {
 		extentReports = new ExtentReports();
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("Reports/Report.html");
+		sparkReporter.config().setReportName("All Test Reports");
 		extentReports.attachReporter(sparkReporter);
 		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
 		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
@@ -68,7 +69,8 @@ public class TwoTestBase {
 		}
 		driver.manage().window().maximize();
 		Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities();
-		String device = capabilities.getBrowserName() + "_" + capabilities.getBrowserVersion();
+		String device = capabilities.getBrowserName() + "_" 
+		+ capabilities.getBrowserVersion().substring(0, capabilities.getBrowserVersion().indexOf("."));
 		String author = context.getCurrentXmlTest().getParameter("author");
 		extentTest = extentReports.createTest(context.getName());
 		extentTest.assignAuthor(author);

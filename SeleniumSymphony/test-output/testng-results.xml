@@ -1,220 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="9" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-06T14:55:43 EDT" name="Suite Two" finished-at="2023-05-06T14:56:24 EDT" duration-ms="41284">
+  <suite started-at="2023-05-07T12:51:37 EDT" name="Bank Test Suite" finished-at="2023-05-07T12:51:51 EDT" duration-ms="13834">
     <groups>
       <group name="Sanity">
-        <method signature="TwoTest.facebookTest()[pri:0, instance:com.pro.rough.TwoTest@7d9d0818]" name="facebookTest" class="com.pro.rough.TwoTest"/>
+        <method signature="HomePageTest.testBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="testBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="TwoTest.googleTest()[pri:0, instance:com.pro.rough.TwoTest@4be29ed9]" name="googleTest" class="com.pro.rough.TwoTest"/>
-        <method signature="TwoTest.facebookTest()[pri:0, instance:com.pro.rough.TwoTest@7d9d0818]" name="facebookTest" class="com.pro.rough.TwoTest"/>
-        <method signature="TwoTest.hackerrankTest()[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" name="hackerrankTest" class="com.pro.rough.TwoTest"/>
+        <method signature="HomePageTest.testBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="testBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
       </group> <!-- Regression -->
-      <group name="E2E">
-        <method signature="TwoTest.hackerrankTest()[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" name="hackerrankTest" class="com.pro.rough.TwoTest"/>
-      </group> <!-- E2E -->
       <group name="Smoke">
-        <method signature="TwoTest.googleTest()[pri:0, instance:com.pro.rough.TwoTest@4be29ed9]" name="googleTest" class="com.pro.rough.TwoTest"/>
+        <method signature="HomePageTest.testBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" name="testBankManagerLogin" class="com.pro.testcases.HomePageTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-05-06T14:55:43 EDT" name="Google Test" finished-at="2023-05-06T14:55:54 EDT" duration-ms="10645">
-      <class name="com.pro.rough.TwoTest">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.pro.rough.TwoTest@4be29ed9]" started-at="2023-05-06T14:55:43 EDT" name="setup" finished-at="2023-05-06T14:55:47 EDT" duration-ms="4343" status="PASS">
+    <test started-at="2023-05-07T12:51:37 EDT" name="Adding customer" finished-at="2023-05-07T12:51:51 EDT" duration-ms="13834">
+      <class name="com.pro.testcases.HomePageTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2023-05-07T12:51:35 EDT" name="setupSuite" finished-at="2023-05-07T12:51:37 EDT" duration-ms="1911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2023-05-07T12:51:37 EDT" name="setup" finished-at="2023-05-07T12:51:49 EDT" duration-ms="11529" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5f9f3e58]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[Chrome]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="googleTest()[pri:0, instance:com.pro.rough.TwoTest@4be29ed9]" started-at="2023-05-06T14:55:47 EDT" name="googleTest" finished-at="2023-05-06T14:55:53 EDT" duration-ms="5546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:com.pro.rough.TwoTest@4be29ed9]" started-at="2023-05-06T14:55:53 EDT" name="checkStatus" finished-at="2023-05-06T14:55:53 EDT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=googleTest status=SUCCESS method=TwoTest.googleTest()[pri:0, instance:com.pro.rough.TwoTest@4be29ed9] output={null}]]]>
-              </value>
-            </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5f9f3e58]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[public void com.pro.rough.TwoTest.googleTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pro.rough.TwoTest@4be29ed9]" started-at="2023-05-06T14:55:53 EDT" name="tearDown" finished-at="2023-05-06T14:55:54 EDT" duration-ms="677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.pro.rough.TwoTest -->
-    </test> <!-- Google Test -->
-    <test started-at="2023-05-06T14:55:54 EDT" name="Facebook Test" finished-at="2023-05-06T14:56:13 EDT" duration-ms="19239">
-      <class name="com.pro.rough.TwoTest">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.pro.rough.TwoTest@7d9d0818]" started-at="2023-05-06T14:55:54 EDT" name="setup" finished-at="2023-05-06T14:56:02 EDT" duration-ms="8767" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3c19592c]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[org.testng.TestRunner@16e195cf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="facebookTest()[pri:0, instance:com.pro.rough.TwoTest@7d9d0818]" started-at="2023-05-06T14:56:02 EDT" name="facebookTest" finished-at="2023-05-06T14:56:08 EDT" duration-ms="5611" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at org.testng.Assert.assertFalse(Assert.java:88)
-at com.pro.rough.TwoTest.facebookTest(TwoTest.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2023-05-07T12:51:49 EDT" name="testBankManagerLogin" finished-at="2023-05-07T12:51:50 EDT" duration-ms="1570" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebookTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:com.pro.rough.TwoTest@7d9d0818]" started-at="2023-05-06T14:56:08 EDT" name="checkStatus" finished-at="2023-05-06T14:56:08 EDT" duration-ms="208" status="PASS">
+        </test-method> <!-- testBankManagerLogin -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2023-05-07T12:51:50 EDT" name="tearDownMethod" finished-at="2023-05-07T12:51:50 EDT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=facebookTest status=FAILURE method=TwoTest.facebookTest()[pri:0, instance:com.pro.rough.TwoTest@7d9d0818] output={null}]]]>
+                <![CDATA[[TestResult name=testBankManagerLogin status=SUCCESS method=HomePageTest.testBankManagerLogin()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3c19592c]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[public void com.pro.rough.TwoTest.facebookTest()]]>
+                <![CDATA[public void com.pro.testcases.HomePageTest.testBankManagerLogin()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pro.rough.TwoTest@7d9d0818]" started-at="2023-05-06T14:56:08 EDT" name="tearDown" finished-at="2023-05-06T14:56:13 EDT" duration-ms="4644" status="PASS">
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2023-05-07T12:51:50 EDT" name="tearDown" finished-at="2023-05-07T12:51:51 EDT" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.pro.rough.TwoTest -->
-    </test> <!-- Facebook Test -->
-    <test started-at="2023-05-06T14:56:13 EDT" name="Hacker Rank Test" finished-at="2023-05-06T14:56:24 EDT" duration-ms="11360">
-      <class name="com.pro.rough.TwoTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" started-at="2023-05-06T14:55:42 EDT" name="setupSuite" finished-at="2023-05-06T14:55:43 EDT" duration-ms="508" status="PASS">
+        <test-method is-config="true" signature="genrateReport()[pri:0, instance:com.pro.testcases.HomePageTest@53045c6c]" started-at="2023-05-07T12:51:51 EDT" name="genrateReport" finished-at="2023-05-07T12:51:52 EDT" duration-ms="847" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" started-at="2023-05-06T14:56:13 EDT" name="setup" finished-at="2023-05-06T14:56:16 EDT" duration-ms="3532" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@60e1d87c]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="hackerrankTest()[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" started-at="2023-05-06T14:56:16 EDT" name="hackerrankTest" finished-at="2023-05-06T14:56:24 EDT" duration-ms="7062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hackerrankTest -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" started-at="2023-05-06T14:56:24 EDT" name="checkStatus" finished-at="2023-05-06T14:56:24 EDT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=hackerrankTest status=SUCCESS method=TwoTest.hackerrankTest()[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@60e1d87c]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[public void com.pro.rough.TwoTest.hackerrankTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" started-at="2023-05-06T14:56:24 EDT" name="tearDown" finished-at="2023-05-06T14:56:24 EDT" duration-ms="757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.pro.rough.TwoTest@2b40ff9c]" started-at="2023-05-06T14:56:24 EDT" name="generateReport" finished-at="2023-05-06T14:56:25 EDT" duration-ms="860" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
-      </class> <!-- com.pro.rough.TwoTest -->
-    </test> <!-- Hacker Rank Test -->
-  </suite> <!-- Suite Two -->
+        </test-method> <!-- genrateReport -->
+      </class> <!-- com.pro.testcases.HomePageTest -->
+    </test> <!-- Adding customer -->
+  </suite> <!-- Bank Test Suite -->
 </testng-results>

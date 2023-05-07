@@ -9,8 +9,8 @@
         <methods>
           <include name="setup"/>
           <include name="setupSuite"/>
-          <include name="checkStatus"/>
           <include name="tearDown"/>
+          <include name="checkStatus"/>
           <include name="facebookTest"/>
           <include name="generateReport"/>
         </methods>
