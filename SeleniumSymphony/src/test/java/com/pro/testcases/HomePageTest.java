@@ -4,9 +4,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.pro.pages.TestBase;
-import com.pro.utilities.ExcelDataProvider;
 import com.pro.pages.HomePage;
+import com.pro.pages.TestBase;
 
 public class HomePageTest extends TestBase {
 		
